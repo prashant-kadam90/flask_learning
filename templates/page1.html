@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My First edit from GIT  </h1>
+            <form action="/handle_button" method="POST">
+        <button type="submit" name="button" value="clicked">Click Me</button>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <h2>About Me</h2>
+            <p>This is a section about me.</p>
+        </section>
+        <section id="section2">
+            <h2>My Projects</h2>
+            <p>Here are some of my projects.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
+
+ 
